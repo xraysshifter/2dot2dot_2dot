@@ -1,0 +1,157 @@
+@import url("fonts.css");
+
+::selection {
+	background-color:whitesmoke;
+	color:black;
+	text-shadow:
+  	1px 1px 2px black,
+  	0 0 1em black,
+  	0 0 0.2em black;
+
+}
+
+
+body {
+	color:snow;
+	background: linear-gradient(-45deg, black, #0C0A0F, #010200, black);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+	height: 100vh;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
+	font-family:sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes zoomgradient {
+	0% {
+		background-position: 50% 50%;
+		background-size:300% 300%;
+	}
+	50% {
+		background-size:600% 450%;
+		background-position: 50% 250%;
+	}
+	100% {
+		background-size:300% 300%;
+		background-position: 50% 50%;
+	}
+}
+
+
+#container {
+	font-size:30px;
+	opacity:50%;
+	background: radial-gradient(black, #0C0A0F, #010200, black);
+	background-size: 400% 400%;
+	animation: gradient 45s ease infinite running ;
+
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	align-items:center;
+	position:absolute;
+	top:200px;
+
+	width:500px;
+	height:100vh
+}
+
+#content {
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	width:200px;
+	height:200px;
+	background: radial-gradient(black, #0C0A0F, #010200, black);
+	background-size: 800% 800%;
+	animation: zoomgradient 30s ease-in-out reverse infinite;
+ 	position:absolute;
+ 	top:10px;
+}
+
+#content p {
+	margin-top:10px;
+}
+
+
+
+
+
+#articlescontainer {
+	margin-left:20px;
+	width:400px;
+	justify-content:center;
+	align-items:center;
+	background:transparent;
+	position:relative;
+	margin-top:100px;
+
+}
+
+#article {
+	width:90%;
+	margin-bottom:10px;
+}
+
+.metad {
+	color:snow;
+	width:500px;
+	display:flex;
+	flex-direction:row;
+	position:relative;
+	margin:0;
+	margin-top:5px;
+	margin-left:10px;
+	padding:0;
+}
+
+.metad p {
+	margin-right:15px;
+}
+
+a {
+	text-shadow:
+  	0 0 0.1em white,
+  	0 0 0.2em white;
+
+	font-size:20px;
+	color:snow;
+	font-family:Terminus-bold;
+}
+
+a:hover {
+	background-color:snow;
+
+	text-shadow:
+  	1px 1px 1px black,
+  	0 0 1em snow,
+  	0 0 0.2em black;
+
+	font-size:21px;
+	color:black;
+	font-family:Terminus-bold;
+}
+
+
+p {
+	margin:0;
+	padding:0;
+	font-family:Terminus;
+}
+

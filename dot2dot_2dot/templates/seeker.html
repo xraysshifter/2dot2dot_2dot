@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename="seeker.css")}}">
+  </head>
+	
+  {% include 'menu.html' %}
+
+  <body>
+    <!-- Content -->
+
+	<div id="pcontainer"> 
+		<div id="page"> 
+			<h1 id="title"> {{page["title"]}} </h1>	
+			<div class="metad">
+				<p> {{page["date"]}} </p>
+			</div>
+			<div id="rpage">
+				{{ page["content"] | safe }} 
+			</div>
+			<div class="metad">
+				<p> {{page["author"]}} </p>
+		</div>
+	</div>
+
+  </body>
+</html>
+

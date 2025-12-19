@@ -1,0 +1,19 @@
+@font-face {
+        font-family:"Terminus";
+        src: url("./fonts/TerminusTTF.ttf") format("truetype");
+}
+
+@font-face {
+        font-family:"Terminus-Bold";
+        src: url("./fonts/TerminessNerdFont-Bold.ttf") format("truetype");
+}
+
+@font-face {
+        font-family:"Terminus-Italic";
+        src: url("./fonts/TerminessNerdFontMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+        font-family:"Terminus-Italic-Bold";
+        src: url("./fonts/TerminessNerdFont-BoldItalic.ttf") format("truetype");
+}

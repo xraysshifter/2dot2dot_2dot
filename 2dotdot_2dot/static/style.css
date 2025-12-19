@@ -1,0 +1,17 @@
+.bodyheadcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyhead {
+	background-color:white;
+	text-align:center;
+	display:flex;
+	
+}
+
+body {
+	background-color:black;
+	color:white;
+}

@@ -1,0 +1,152 @@
+@import url("fonts.css");
+
+::selection {
+	background-color:whitesmoke;
+	color:black;
+	text-shadow:
+  	1px 1px 2px black,
+  	0 0 1em black,
+  	0 0 0.2em black;
+
+}
+
+body {
+	color:snow;
+	background: linear-gradient(-45deg, black, #0C0A0F, #010200, black);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+
+	font-family:Terminus-bold;
+}
+
+body h1 {
+	font-size:25px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes zoomgradient {
+	0% {
+		background-position: 50% 50%;
+		background-size:300% 300%;
+	}
+	50% {
+		background-size:600% 450%;
+		background-position: 50% 250%;
+	}
+	100% {
+		background-size:300% 300%;
+		background-position: 50% 50%;
+	}
+}
+
+.metad {
+	color:snow;
+	width:500px;
+	display:flex;
+	flex-direction:row;
+	position:relative;
+	margin:0;
+	margin-top:5px;
+	margin-left:10px;
+	margin-bottom:20px;
+	padding:0;
+}
+
+.metad p {
+	margin-right:15px;
+}
+
+a {
+	text-shadow:
+  	0 0 0.1em white,
+  	0 0 0.2em white;
+
+	font-size:20px;
+	color:snow;
+	font-family:Terminus-bold;
+}
+
+a:hover {
+	background-color:snow;
+
+	text-shadow:
+  	1px 1px 1px black,
+  	0 0 1em snow,
+  	0 0 0.2em black;
+
+	font-size:21px;
+	color:black;
+	font-family:Terminus-bold;
+}
+
+
+p {
+	margin:0;
+	padding:0;
+	font-family:Terminus;
+}
+
+
+
+#pcontainer {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:850px;
+	top:50px;
+	position:relative;
+	background: radial-gradient(black, #0C0A0F, #010200, black);
+	background-size: 800% 800%;
+	animation: zoomgradient 30s ease-in-out reverse infinite;
+}
+
+#title{
+	text-decoration:underline;
+	font-family:Terminus-bold;
+	color:snow;
+	text-shadow:(
+	0px 0px 5px black,
+	0 0 0.2em black,
+	)
+}
+
+#page {
+	width:800px;
+}
+
+#rpage{ 
+	width:750px;
+}
+
+p {
+	font-size:18px;
+	margin:20px;
+}
+
+#rpage h1 {
+	text-decoration:underline;
+	color: #efc9f9;
+	font-family:Terminus-bold;
+}
+
+#rpage h2 {
+	font-family:Terminus;
+	color: white;
+}
+

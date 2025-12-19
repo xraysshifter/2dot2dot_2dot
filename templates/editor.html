@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>/</title>
+    <meta name="description" content="/">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',
+	filename='style.css')}}"> 
+  </head>
+  <body>
+	 	 
+		{{ckeditor.load()}}
+		
+		<form method="post">
+
+			<label for="title"> titre ?:  </label>
+			<input type="text" id="title" name="title">
+
+			<label for="author"> auteur.ice ?:  </label>
+			<input type="text" id="author" name="author">
+
+			{{ ckeditor.create() }}
+			
+			<input type="submit">
+		</form>
+
+
+  </body>
+</html>
+
